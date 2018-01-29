@@ -6,15 +6,24 @@ This project is a parser created for a madeup language.
 
 - The following keywords are defined:
     ○ int
+    
     ○ string
+    
     ○ set
+    
     ○ print
+    
     ○ println
+    
 - There are four operators:
     ○ +
+    
     ○ -
+    
     ○ *
+    
     ○ /
+    
     
 - Grammar rules:
    Prog ::= StmtList
