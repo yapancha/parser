@@ -5,6 +5,7 @@ This project is a parser created for a madeup language.
 
 
 - The following keywords are defined:
+
     ○ int
     
     ○ string
@@ -27,15 +28,25 @@ This project is a parser created for a madeup language.
     
     
 - Grammar rules:
+
    Prog ::= StmtList
+   
    StmtList ::= { Stmt T_SC } { StmtList }
+   
    Stmt ::= Decl | Set | Print
+   
    Decl ::= T_INT T_ID | T_STRING T_ID
+   
    Set ::= T_SET T_ID Expr
+   
    Print ::= T_PRINT Expr | T_PRINTLN Expr
+   
    Expr ::= Term { (T_PLUS|T_MINUS) Expr }
+   
    Term ::= Primary { (T_STAR|T_SLASH) Term }
+   
    Primary ::= T_ICONST | T_SCONST | T_ID | T_LPAREN Expr T_RPAREN
+   
 
 - Semantic rules:
 
