@@ -16,6 +16,7 @@ This project is a parser created for a madeup language.
     ○ println
     
 - There are four operators:
+
     ○ +
     
     ○ -
