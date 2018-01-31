@@ -27,20 +27,6 @@ void error(int linenum, const string& message)
     cout << linenum+1 << ":" << message << endl;
 }
 
-
-//????????????????????????????????????????????????????
-//the function will display the error if the file name is already taken
-void deError(int linenum, const string& message){
-
-    if (theInputFileName){
-        cout<< "the filename is given already. Use another file name please";
-    } else{
-        cout<<linenum << ": "<< message << endl;
-
-    }
-}
-
-
 // SemanticCheck implemented as tree visitor
 // We visit only relevant nodes, i.e. VariableDeclaration and Identifier nodes
 // We keep a set of all names declared so far
